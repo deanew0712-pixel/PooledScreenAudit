@@ -36,3 +36,4 @@ jobs:
       - run: docker build -t pooledscreenaudit:test .
       - run: docker run --rm pooledscreenaudit:test --version
       - run: docker run --rm --entrypoint python pooledscreenaudit:test -m unittest discover -s /opt/psa/tests -v
+      - run: docker run --rm --entrypoint python pooledscreenaudit:test /opt/psa/tests/cli_smoke.py

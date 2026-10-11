@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pooledscreenaudit"
-version = "0.4.1rc1"
+version = "0.4.1"
 description = "Matrix-level audits of control-associated prediction in pooled variant screens"
 readme = "README.md"
 license = "MIT"

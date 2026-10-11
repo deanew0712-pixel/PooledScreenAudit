@@ -1,8 +1,8 @@
 # Publication checklist
 
-This is a local candidate, not an already validated cross-platform release.
+The engineering candidate passed the 12-job OS/Python matrix and Linux container job on 11 October 2026. See CI_VALIDATION.json for the exact tested commit. Stable-release commits are tested again before tagging. PyPI, a new Zenodo DOI, Software Heritage and bio.tools remain separate publication steps; do not infer their completion from the GitHub release.
 
-1. Author chooses the GitHub owner/repository and approves public upload. Include source, tests, CI, license, README and attribution. Do not upload manuscripts, personal correspondence or unlicensed raw counts.
+1. Approved repository: deanew0712-pixel/PooledScreenAudit. Include source, tests, CI, license, README and attribution. Do not upload manuscripts, personal correspondence or unlicensed raw counts.
 2. Push and inspect all 12 Python/OS jobs and the Linux container job. Fix failures; record run URLs and exact commits. Do not replace a failed platform with an unsupported claim.
 3. Build sdist and wheel, run `python -m twine check dist/*`, install the wheel in a fresh environment and run the documented checks.
 4. Author creates a PyPI/TestPyPI project and approves publication. Prefer trusted publishing. Never put API tokens into this directory. Confirm package-name availability and maintainership before upload.

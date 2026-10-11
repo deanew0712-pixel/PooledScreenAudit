@@ -1,0 +1,75 @@
+{
+  "headSha": "4c8c8c2632acb9a7e84b742b38dc9c2c64bad810",
+  "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "container",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358608"
+    },
+    {
+      "name": "tests (ubuntu-22.04, 3.9)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358704"
+    },
+    {
+      "name": "tests (ubuntu-22.04, 3.12)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358730"
+    },
+    {
+      "name": "tests (ubuntu-22.04, 3.11)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358735"
+    },
+    {
+      "name": "tests (macos-14, 3.9)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358739"
+    },
+    {
+      "name": "tests (windows-2022, 3.11)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358757"
+    },
+    {
+      "name": "tests (macos-14, 3.10)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358784"
+    },
+    {
+      "name": "tests (ubuntu-22.04, 3.10)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358785"
+    },
+    {
+      "name": "tests (windows-2022, 3.12)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358827"
+    },
+    {
+      "name": "tests (windows-2022, 3.10)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358882"
+    },
+    {
+      "name": "tests (macos-14, 3.12)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358897"
+    },
+    {
+      "name": "tests (macos-14, 3.11)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358922"
+    },
+    {
+      "name": "tests (windows-2022, 3.9)",
+      "conclusion": "success",
+      "url": "https://github.com/deanew0712-pixel/PooledScreenAudit/actions/runs/38137526006/job/114464358934"
+    }
+  ],
+  "scope": "26 interface tests, numerical fixture, built-wheel CLI smoke per OS/Python; Linux Docker build and interface tests. Not all full research analyses on each OS.",
+  "historical_record": "RELEASE_VALIDATION.json retains 0.4.0 local verification; this CI record supplements it."
+}

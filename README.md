@@ -1,12 +1,12 @@
 # PooledScreenAudit
 
-PooledScreenAudit evaluates position-based prediction and control association in pooled variant-effect matrices. It provides matched predictive models, control adjustment, direction attribution and rank-aware geometry. This 0.4.1rc1 engineering candidate retains the 0.4.0 numerical kernels and adds tests, CI configuration and a container recipe.
+PooledScreenAudit evaluates position-based prediction and control association in pooled variant-effect matrices. It provides matched predictive models, control adjustment, direction attribution and rank-aware geometry. Version 0.4.1 retains the 0.4.0 numerical kernels and adds tests, cross-platform CI and a tested container recipe.
 
-This candidate is not published. The stable 0.4.0 release is https://doi.org/10.5281/zenodo.22846913. Supporting research analyses are archived separately at https://doi.org/10.5281/zenodo.22707659. RRID:SCR_029094. Neither DOI identifies this unreleased candidate. See RELEASE_CHECKLIST.md for publication steps and actual validation records for tested platforms.
+Repository and releases: https://github.com/deanew0712-pixel/PooledScreenAudit. The archived 0.4.0 release is https://doi.org/10.5281/zenodo.22846913. Supporting research analyses are archived separately at https://doi.org/10.5281/zenodo.22707659. RRID:SCR_029094. Neither DOI identifies version 0.4.1. See CI_VALIDATION.json and the linked Actions run for cross-platform evidence; RELEASE_VALIDATION.json is the unchanged historical 0.4.0 local record.
 
 ## Install and quick start
 
-Use Python 3.9–3.12 in a fresh virtual environment; the release test used Python 3.9.6. Python and a CPU are sufficient; no GPU or credentials are required. Installation uses standard Python dependencies. Version bounds are in pyproject.toml; tested environments and timings are in RELEASE_VALIDATION.json, not claims of testing every allowed interpreter or platform.
+Use Python 3.9–3.12 in a fresh virtual environment. Python and a CPU are sufficient; no GPU or credentials are required. Installation uses standard Python dependencies. The 12-job CI matrix passed on Ubuntu 22.04, macOS 14 and Windows Server 2022, each with Python 3.9, 3.10, 3.11 and 3.12. These checks cover installation, 26 interface tests, a numerical fixture and CLI smoke tests, not every full research analysis on every platform. The Linux Docker build and container interface tests also passed. Exact runs and scope are recorded in CI_VALIDATION.json.
 
 ```sh
 python -m venv env
@@ -17,7 +17,7 @@ env/bin/pooledscreenaudit eta --input example_input/egfr_sites.csv --out example
 env/bin/pooledscreenaudit egfr-geometry --input example_input/egfr_sites.csv --out example_geometry
 ```
 
-On Windows use `env\Scripts\python.exe` and `env\Scripts\pooledscreenaudit.exe`. Windows has not been tested in this release. Outputs must not already exist, preventing accidental replacement of previous analyses.
+On Windows use `env\Scripts\python.exe` and `env\Scripts\pooledscreenaudit.exe`. Outputs must not already exist, preventing accidental replacement of previous analyses.
 
 ## Commands and parameters
 
@@ -69,6 +69,8 @@ Frozen EGFR: ten variant-cold and five position-cold evaluations, with the histo
 Eta: five block-grouped outer folds and three inner folds; target and predictor preprocessing is training-fitted. The reported score is the square root of the nonnegative part of mean feature-wise out-of-fold R², after error/deviation sums are normalized by outer-training feature variance. Negative R² contributes to the mean. It measures predictability, not empirical identifiability. The wrapper reports the three primary block widths; historical solvent-accessibility sensitivities remain in Source Data 4.
 
 Positive MAE gain means improvement. Negative gains are retained. Paired split distributions are descriptive, not independent biological replicate confidence intervals. Small adjusted gain is insufficient evidence without a meaningful unadjusted signal. No universal cutoff, causal technical mechanism, disease prediction or treatment recommendation is generated. Missing control metadata and shared outcome denominators limit interpretation.
+
+Control adjustment is conditional on the measured control representation. Measurement error or omitted control features can leave a positive adjusted position gain even when its generating signal is entirely shared with latent controls. Such a gain is not proof of independent biology or drug specificity. Control-associated information may itself include genuine biological fitness.
 
 ## Outputs and provenance
 
