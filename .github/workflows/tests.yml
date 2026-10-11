@@ -1,0 +1,38 @@
+name: Test package
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, macos-14, windows-2022]
+        python: ['3.9', '3.10', '3.11', '3.12']
+    runs-on: ${{ matrix.os }}
+    env:
+      MPLBACKEND: Agg
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install --upgrade pip build twine
+      - run: python -m build
+      - run: python -m twine check dist/*
+      - name: Install built wheel
+        run: python -c "import glob,subprocess,sys; subprocess.check_call([sys.executable,'-m','pip','install',glob.glob('dist/*.whl')[0]])"
+      - run: python -m unittest discover -s tests -v
+      - run: python tests/numerical_fixture.py
+      - run: python tests/cli_smoke.py
+      - name: Freeze tested environment
+        run: python -m pip freeze
+  container:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v6
+      - run: docker build -t pooledscreenaudit:test .
+      - run: docker run --rm pooledscreenaudit:test --version
+      - run: docker run --rm --entrypoint python pooledscreenaudit:test -m unittest discover -s /opt/psa/tests -v

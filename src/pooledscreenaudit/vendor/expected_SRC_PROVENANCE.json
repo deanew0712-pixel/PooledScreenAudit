@@ -1,0 +1,43 @@
+{
+  "commit": "956034184cbce1c65d34770557661b9a5905b2a3",
+  "files": [
+    {
+      "file": "DAS_25um_counts.csv",
+      "url": "https://raw.githubusercontent.com/eahler/2023_src_inhib/956034184cbce1c65d34770557661b9a5905b2a3/data/DAS_25um_counts.csv",
+      "sha256": "342f8c8745ba838b9143f116b9c7a51328e684e7d0339dfea779efdcf380509a"
+    },
+    {
+      "file": "DAS_100um_counts.csv",
+      "url": "https://raw.githubusercontent.com/eahler/2023_src_inhib/956034184cbce1c65d34770557661b9a5905b2a3/data/DAS_100um_counts.csv",
+      "sha256": "6c8b5d3ca7751939f84df701b6034205ad557893838e59453f3b7fbb0e450de0"
+    },
+    {
+      "file": "Inhibitor_1_counts.csv",
+      "url": "https://raw.githubusercontent.com/eahler/2023_src_inhib/956034184cbce1c65d34770557661b9a5905b2a3/data/Inhibitor_1_counts.csv",
+      "sha256": "1421a9e12fa67358966919efc991530878c75fc780ca8228c0b0882f05cb8c6d"
+    },
+    {
+      "file": "Inhibitor_2_counts.csv",
+      "url": "https://raw.githubusercontent.com/eahler/2023_src_inhib/956034184cbce1c65d34770557661b9a5905b2a3/data/Inhibitor_2_counts.csv",
+      "sha256": "5f7732fe110086b15dbac7c438139dddacbab4dcccc83e1a8c444ce89e626652"
+    },
+    {
+      "file": "Inhibitor_4_counts.csv",
+      "url": "https://raw.githubusercontent.com/eahler/2023_src_inhib/956034184cbce1c65d34770557661b9a5905b2a3/data/Inhibitor_4_counts.csv",
+      "sha256": "d352b716a849d5af42f4980289559120f7c53d3ebec1b2605d66b072ea2fdece"
+    }
+  ],
+  "edges": 17106,
+  "variants": 3443,
+  "positions": 246,
+  "conditions": [
+    "DAS_25um",
+    "DAS_100um",
+    "Inhibitor_1",
+    "Inhibitor_2",
+    "Inhibitor_4"
+  ],
+  "response": "mean replicate log2 endpoint C/input frequency ratio; not published activity score",
+  "control": "site input-count summaries averaged across conditions; two replicates; not DMSO",
+  "license_note": "Upstream repository has no explicit license; raw files are referenced and fetched, not relicensed or redistributed in the submission workflow."
+}

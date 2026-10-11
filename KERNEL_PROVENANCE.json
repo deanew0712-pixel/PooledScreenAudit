@@ -1,0 +1,52 @@
+[
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/audit.py",
+    "bundled": "src/pooledscreenaudit/vendor/audit.py",
+    "sha256": "8199760571f6715a6b2edd76683fcf3b434ddfa73ba152119acd7c68199b8c75"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/prepare_src.py",
+    "bundled": "src/pooledscreenaudit/vendor/prepare_src.py",
+    "sha256": "9df02acd0ab633acd9207e4633592bffd94ed96f5e6b7f792ee3e8c4defc5b18"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/expected_SRC_PROVENANCE.json",
+    "bundled": "src/pooledscreenaudit/vendor/expected_SRC_PROVENANCE.json",
+    "sha256": "fff14d4e42d4fbe2b2a50d596320a66924ef31eeb56695935075875d41dd2f3c"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/run_paper_a_fully_nested_direction.py",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/run_paper_a_fully_nested_direction.py",
+    "sha256": "454982a21b7fa0cfa7a1d87581b67a64ca3b48f9ed449f360d52bb7c1b026afe"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/run_paper_a_phase7_directional_attribution_v1.py",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/run_paper_a_phase7_directional_attribution_v1.py",
+    "sha256": "3f3b6fe264d5ff7a2aa8928664c472d756afa3f555ef09ede0e2bd99ba0c7906"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/run_dms_b15_ablation_v2.py",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/run_dms_b15_ablation_v2.py",
+    "sha256": "eb308ecacf057034b7bdd69d3d3b8790866238e29312aa8b62e25ce08dd89e27"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/run_v3_dms_structure_technical_models.py",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/run_v3_dms_structure_technical_models.py",
+    "sha256": "b68dc483fe4719ccf4f56ace2dbbc6aef292ba199c8a5f840ef94e21a406b881"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/inputs/frozen_edges.csv",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/inputs/frozen_edges.csv",
+    "sha256": "6c244bc38c02e3a23617a3e85a17594cd7dfad6162bead3215dc823ca10bb6c9"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/inputs/technical_columns.json",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/inputs/technical_columns.json",
+    "sha256": "964dcb80d2882f9476e4b5436f3d9beb0ac465662b0eab386c89694067667ed7"
+  },
+  {
+    "source": "software/paper_a_matrix_audit_v0_3/fully_nested_egfr/inputs/split_manifest.json",
+    "bundled": "src/pooledscreenaudit/vendor/fully_nested_egfr/inputs/split_manifest.json",
+    "sha256": "2b2a6eb19c790a9dbfe34a81e0364d336027f9b123acdf1efe30c30d054bf519"
+  }
+]

@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "same_implementation": true,
+  "external_scientific_validation": false,
+  "scope": "Installed package; numerical fixture; 9 interface tests; eta; geometry; 270 EGFR model evaluations; SRC main and full direction models; fresh pinned SRC network fetch and derived-input comparison",
+  "checks": [
+    {
+      "name": "interface_tests",
+      "exit_code": 0,
+      "seconds": 0.4471651249999997
+    },
+    {
+      "name": "legacy_numerical_fixture",
+      "status": "PASS"
+    },
+    {
+      "name": "example",
+      "exit_code": 0,
+      "seconds": 0.868295250000001
+    },
+    {
+      "name": "eta",
+      "exit_code": 0,
+      "seconds": 0.5540131670000008
+    },
+    {
+      "name": "eta_three_widths",
+      "status": "PASS",
+      "values": [
+        0.38234120066066535,
+        0.3669753036850065,
+        0.35246508128643667
+      ]
+    },
+    {
+      "name": "egfr_geometry",
+      "exit_code": 0,
+      "seconds": 0.5705873330000006
+    },
+    {
+      "name": "geometry_reference",
+      "rows": 632,
+      "maximum_absolute_difference": 2.6798008256889716e-14,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "generic_geometry",
+      "exit_code": 0,
+      "seconds": 0.41985337500000064
+    },
+    {
+      "name": "existing_output_refused",
+      "status": "PASS"
+    },
+    {
+      "name": "egfr_full",
+      "exit_code": 0,
+      "seconds": 90.747323833
+    },
+    {
+      "name": "direction_parameterization_reference.csv",
+      "rows": 15,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "fold_fitted_direction_stability.csv",
+      "rows": 15,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "direction_subset_gains.csv",
+      "rows": 240,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "global_direction_coefficients.csv",
+      "rows": 3,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "direction_subset_model_metrics.csv",
+      "rows": 990,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "direction_shapley_by_split.csv",
+      "rows": 90,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "global_direction_values_by_residue.csv",
+      "rows": 268,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "src_four_models",
+      "exit_code": 0,
+      "seconds": 30.498037167000007
+    },
+    {
+      "name": "src_gains",
+      "rows": 60,
+      "maximum_absolute_difference": 1.6344949005375753e-09,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "dependencies",
+      "exit_code": 0,
+      "seconds": 0.22108687499999746
+    },
+    {
+      "name": "fresh_SRC_fetch_and_derivation",
+      "rows": 17106,
+      "maximum_absolute_difference": 0.0,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "full_SRC_screen_gains.csv",
+      "rows": 60,
+      "maximum_absolute_difference": 1.6344949005375753e-09,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "full_SRC_screen_metrics.csv",
+      "rows": 1080,
+      "maximum_absolute_difference": 3.954461647026619e-09,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "full_SRC_screen_shapley.csv",
+      "rows": 60,
+      "maximum_absolute_difference": 6.917659986505065e-10,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "full_SRC_screen_direction_geometry.csv",
+      "rows": 10,
+      "maximum_absolute_difference": 5.481133099477509e-09,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "inner_training_separation",
+      "bases": 45,
+      "status": "PASS"
+    }
+  ],
+  "tested_python": "3.9.6",
+  "tested_numpy": "1.26.4",
+  "tested_scipy": "1.13.1",
+  "untested_platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "known_exclusion": "NumPy 2.0.2 solver self-check failed on this Mac; dependency restricted to <2"
+}

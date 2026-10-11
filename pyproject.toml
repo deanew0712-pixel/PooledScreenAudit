@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pooledscreenaudit"
+version = "0.4.1rc1"
+description = "Matrix-level audits of control-associated prediction in pooled variant screens"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["deep mutational scanning", "control association", "reproducibility"]
+requires-python = ">=3.9,<3.13"
+dependencies = ["numpy>=1.26,<2", "pandas>=2.2,<3", "scipy>=1.12,<2", "threadpoolctl>=3.5,<4", "matplotlib>=3.9,<4", "joblib>=1.4,<2"]
+
+[project.urls]
+"Published stable release" = "https://doi.org/10.5281/zenodo.22846913"
+"Research analysis" = "https://doi.org/10.5281/zenodo.22707659"
+"RRID" = "https://scicrunch.org/resolver/SCR_029094"
+
+[project.scripts]
+pooledscreenaudit = "pooledscreenaudit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pooledscreenaudit = ["vendor/*.py", "vendor/*.json", "vendor/fully_nested_egfr/*.py", "vendor/fully_nested_egfr/inputs/*", "examples/*"]

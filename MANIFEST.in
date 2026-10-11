@@ -1,0 +1,5 @@
+include LICENSE README.md THIRD_PARTY_NOTICES.md CHANGELOG.md Dockerfile requirements-tested.txt RELEASE_CHECKLIST.md
+recursive-include tests *.py
+recursive-include .github *.yml
+recursive-include src/pooledscreenaudit/examples *
+recursive-include src/pooledscreenaudit/vendor *.py *.json *.csv
